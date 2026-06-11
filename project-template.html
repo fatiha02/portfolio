@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} | Sana Fatiha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <header id="header">
+        <nav class="container">
+            <div class="logo">SANA<span>.</span></div>
+            <a href="index.html#portfolio" class="btn btn-secondary">← Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail section">
+            <div class="container">
+                <div class="project-header reveal">
+                    <h1 class="highlight-gold">{{title}}</h1>
+                    <div class="project-meta">
+                        <span class="tag">{{tags}}</span>
+                    </div>
+                </div>
+
+                <div class="project-layout">
+                    <div class="project-main reveal">
+                        <div class="project-large-image">
+                            <img src="{{image}}" alt="{{title}} Preview">
+                        </div>
+                        <div class="project-description">
+                            <h2>Project Overview</h2>
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+
+                    <div class="project-sidebar reveal">
+                        <div class="sidebar-card">
+                            <h3>Tech Stack</h3>
+                            <ul class="tech-list">
+                                {{techList}}
+                            </ul>
+                        </div>
+                        <div class="owner-card">
+                            <img src="profile.jpg" alt="Sana Fatiha" class="owner-img">
+                            <p>Built by <strong>Sana Fatiha</strong></p>
+                            <p>Frontend Developer | AI Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mini-footer">
+        <div class="container">
+            <p>&copy; 2026 Sana Fatiha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

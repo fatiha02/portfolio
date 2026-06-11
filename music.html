@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Music | AI Recommendation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --black: #000; --gold: #d4af37; --gray: #121212; }
+        body { background: var(--black); color: #fff; font-family: 'Inter', sans-serif; margin: 0; display: flex; }
+        .sidebar { width: 250px; background: var(--gray); height: 100vh; padding: 30px; border-right: 1px solid #333; }
+        .main { flex-grow: 1; padding: 50px; background: linear-gradient(to bottom, #111, #000); }
+        .nav { margin-bottom: 40px; display: flex; justify-content: space-between; }
+        .playlist-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .playlist-card { background: #181818; padding: 20px; border-radius: 8px; transition: 0.3s; }
+        .playlist-card:hover { background: #282828; }
+        .playlist-card img { width: 100%; border-radius: 4px; border-bottom: 3px solid var(--gold); }
+        .active { color: var(--gold); font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 style="color:var(--gold)">AURA<span>♪</span></h2>
+        <p class="active">Home</p>
+        <p>Search</p>
+        <p>Your Library</p>
+        <hr style="border:0.5px solid #333">
+        <p>Liked Songs</p>
+        <p>AI Daily Mix</p>
+        <a href="index.html" style="color:#888; text-decoration:none; font-size:0.8rem; margin-top:50px; display:block">← EXIT APP</a>
+    </div>
+    <div class="main">
+        <div class="nav">
+            <h1>Recommended for You</h1>
+            <div class="user-profile" style="border: 1px solid var(--gold); padding: 5px 15px; border-radius: 20px">User Profile</div>
+        </div>
+        <div class="playlist-grid">
+            <div class="playlist-card"><div style="height:150px; background:#333; margin-bottom:15px; border-bottom:3px solid var(--gold)"></div><h3>Chill Navy Beats</h3><p style="color:#888">AI Curated</p></div>
+            <div class="playlist-card"><div style="height:150px; background:#444; margin-bottom:15px; border-bottom:3px solid var(--gold)"></div><h3>Golden Classics</h3><p style="color:#888">Premium Mix</p></div>
+            <div class="playlist-card"><div style="height:150px; background:#555; margin-bottom:15px; border-bottom:3px solid var(--gold)"></div><h3>Night Drive</h3><p style="color:#888">Synthwave</p></div>
+            <div class="playlist-card"><div style="height:150px; background:#222; margin-bottom:15px; border-bottom:3px solid var(--gold)"></div><h3>Morning Aura</h3><p style="color:#888">Lo-fi</p></div>
+        </div>
+    </div>
+</body>
+</html>

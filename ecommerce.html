@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Luxe | Premium Shopping</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --navy: #050a14; --gold: #d4af37; --white: #fff; }
+        body { background: var(--navy); color: var(--white); font-family: 'Inter', sans-serif; margin: 0; }
+        header { padding: 20px; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(212,175,55,0.1); }
+        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(5,10,20,0.8), rgba(5,10,20,0.8)), url('project1.png') center/cover; }
+        .hero h1 { font-family: 'Sora', sans-serif; font-size: 3.5rem; color: var(--gold); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 50px 10%; }
+        .card { background: #0d1b32; padding: 20px; border: 1px solid rgba(212,175,55,0.1); transition: 0.3s; }
+        .card:hover { border-color: var(--gold); transform: translateY(-10px); }
+        .price { color: var(--gold); font-weight: bold; font-size: 1.2rem; }
+        .btn { background: var(--gold); color: var(--navy); padding: 10px 20px; border: none; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight:bold; font-size:1.5rem">LUXE<span>STORE</span></div>
+        <nav><a href="index.html" style="color:var(--gold); text-decoration:none">← Return to Portfolio</a></nav>
+    </header>
+    <div class="hero">
+        <h1>Timeless Elegance</h1>
+        <p>Discover the finest collection of luxury timepieces.</p>
+        <button class="btn">Shop Collection</button>
+    </div>
+    <div class="grid">
+        <div class="card"><h3>Gold Chronograph</h3><p>Swiss movement, sapphire glass.</p><p class="price">$1,200</p><button class="btn">Add to Cart</button></div>
+        <div class="card"><h3>Navy Executive</h3><p>Deep ocean dial, master series.</p><p class="price">$850</p><button class="btn">Add to Cart</button></div>
+        <div class="card"><h3>Midnight Rose</h3><p>Limited edition 18k rose gold.</p><p class="price">$2,400</p><button class="btn">Add to Cart</button></div>
+    </div>
+</body>
+</html>
